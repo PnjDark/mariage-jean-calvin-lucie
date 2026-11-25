@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "jean-calvin-lucie-invitation",
+  "main": "./src/index.js",
+  "compatibility_date": "2026-11-24",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    "GOOGLE_DRIVE_FOLDER_ID": "REPLACE_WITH_GOOGLE_DRIVE_FOLDER_ID"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
